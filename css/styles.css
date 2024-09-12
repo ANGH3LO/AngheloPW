@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+:root{
+    --paddin-container: 100px 0;
+    --color-title: #001A49;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--paddin-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/miguelangel.jpg');
+    background-size: cover;
+    clip-path: polygon(0% 15%, 0 1%, 15% 0%, 100% 0, 100% 74%, 79% 90%, 63% 83%, 57% 86%, 41% 75%, 19% 89%, 16% 79%, 0% 85%);
+    z-index: -1;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav_img{
+    display: block;
+    width: 30px;
+}
+
+.nva_close{
+    display: var(--show, none);
+}
+
+.hero_container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero_title{
+    font-size: 3rem;
+}
+
+.hero_paragraph{
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
