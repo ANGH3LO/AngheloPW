@@ -112,3 +112,45 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
 }
+/*aboutt*/
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about_paragraph{
+    line-height: 1.7;
+}
+
+.about_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+}
+
+.about_icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.about_icon{
+    width: 40px;
+
+}
+
+.knowledge{
+
+}
