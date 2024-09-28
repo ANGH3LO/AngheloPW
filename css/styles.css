@@ -103,6 +103,7 @@ body {
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+<<<<<<< HEAD
     margin-top: 20px; /* Añade un margen para separar el botón del texto */
 }
 
@@ -112,21 +113,40 @@ body {
 
 .subtitle {
     color: var(--color-title2);
+=======
+}
+/*aboutt*/
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--color-title);
+>>>>>>> 1e6fcc154fc2819911418a0d913c24e62d3d7217
     font-size: 2rem;
     margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .about_paragraph {
     line-height: 1.7;
 }
 
 .about_main {
+=======
+.about_paragraph{
+    line-height: 1.7;
+}
+
+.about_main{
+>>>>>>> 1e6fcc154fc2819911418a0d913c24e62d3d7217
     padding-top: 80px;
     display: grid;
     width: 90%;
     margin: 0 auto;
     gap: 1em;
     overflow: hidden;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
@@ -135,10 +155,21 @@ body {
     gap: 1em;
     justify-items: center;
     width: 260px;
+=======
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+}
+
+.about_icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 100px;
+>>>>>>> 1e6fcc154fc2819911418a0d913c24e62d3d7217
     overflow: hidden;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .about_icon {
     width: 40px;
 }
@@ -343,4 +374,13 @@ body {
 
 #wordsSection {
     margin-top: 0px; /* Ajusta según sea necesario */
+=======
+.about_icon{
+    width: 40px;
+
+}
+
+.knowledge{
+
+>>>>>>> 1e6fcc154fc2819911418a0d913c24e62d3d7217
 }
