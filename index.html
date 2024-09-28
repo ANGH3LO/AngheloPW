@@ -5,46 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngheloWB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="./images/favicon_32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
+    <!-- Barra Azul Fija con funciones de navegación -->
+    <div class="top-bar">
+        <div>ANGHELO</div> <!-- Título a la izquierda -->
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca-de">Acerca de</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
 
-    <header class="hero">
-        <nav class="nav container">
-            <div class="nav_logo">
-                <h2 class="nav_title">AngheloWB</h2>
-            </div>
-
-            <ul class="nav_link nav_link--menu">
-                <li class="nav_items">
-                    <a href="#" class="nav_links">Inicio</a>
-                </li>
-                <li class="nav_items">
-                    <a href="#" class="nav_links">Acerca de</a>
-                </li>
-                <li class="nav_items">
-                    <a href="#" class="nav_links">Contacto</a>
-                </li>
-                <li class="nav_items">
-                    <a href="#" class="nav_links">Blog</a>
-                </li>
-
-                <img src="./images/exit.svg" class="nav_close" alt="">
-            </ul>
-
-            <div class="nav_menu">
-                <img src="./images/menu.svg" class="nav_img" alt="">
-            </div>
-        </nav> 
-
+    <header class="hero" id="inicio">
         <section class="hero_container container">
-            <h1 class="hero_title">algunas palabras</h1>
-            <p class="hero_paragraph">siguientes palabras</p>
-            <a href="#" class="cta">mas palabras</a>
+            <h1 class="hero_title">Diseñador Web Principiante</h1>
+            <p class="hero_paragraph">Mi nombre es Angel Varela, estoy enfocado en aprender nuevas habilidades</p>
+            <!-- <a href="#" id="moreWords" class="cta">Conocer</a> Añadir ID aquí -->
         </section>
     </header>
+    
+    <!-- <section id="wordsSection">
+        <h2>Más palabras</h2>
+        <p>Contenido adicional aquí...</p>
+    </section> -->
 
+    <main>
+        <!-- Sección Acerca de -->
+        <section class="container about" id="acerca-de">
+            <h2 class="subtitle">Mis lenguajes aprendidos</h2>
+            <!-- <p class="about_paragraph">Texto seguido</p> -->
+
+            <div class="about_main">
+                <article class="about_icons">
+                    <img src="./images/java.svg" alt="about_icons" class="about_icon">
+                    <h3 class="about_title">Pruebas de Escritorio</h3>
+                    <!-- <p class="about_paragraph"></p> -->
+                </article>
+
+                <article class="about_icons">
+                    <img src="./images/python.svg" alt="about_icons" class="about_icon">
+                    <h3 class="about_title">Machine Learning</h3>
+                    <!-- <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi eos voluptatem architecto?</p> -->
+                </article>
+
+                <article class="about_icons">
+                    <img src="./images/c++.svg" alt="about_icons" class="about_icon">
+                    <h3 class="about_title">Algoritmos y Estructuras</h3>
+                    <!-- <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi eos voluptatem architecto?</p> -->
+                </article>
+            </div>
+        </section>
+
+        <section class="testimony"></section>
+            <div class="testimony_container container">
+                <img src="./images/leftarrow.svg" class="testimony_arrow" id="before" alt="">
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Simulacion de redes
+                            <!-- <span class="testimony_course">Estudiante de Ingenieria de Sistemas</span>  -->
+                        </h2>
+                        <p class="testimony_review">Participe en un proyecto para simular redes como Cisco Packet Tracer, conprendiendo los fundamnetos de redes y conectividad</p>
+                    </div>
+                    
+                    <figure class="testimony_picture">
+                        <img src="./images/redes.png" class="testimony_img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Desarrollo de pagina web
+                            <!-- <span class="testimony_course">estudiante de ASDFGSDFGHJ</span> -->
+                        </h2>
+                        <p class="testimony_review">Cree una pagina we, aplicando tecnologias como HTML, CSS, JavaScript</p>
+                    </div>
+                    
+                    <figure class="testimony_picture">
+                        <img src="./images/web.jpg" class="testimony_img" alt="">
+                    </figure>
+                </section>
+
+                <section class="testimony_body" data-id="3">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Base de Datos: MySQL
+                            <!-- <span class="testimony_course">estudiante de ASDFGSDFGHJ</span> -->
+                        </h2>
+                        <!-- <p class="testimony_review">Lonsectetur, adipisicing elit. Ad iusto amet enim provident repudiandae. Deleniti obcaecati iusto odio, reprehenderit dolore, mollitia, tenetur dignissimos sit natus minima totam eum quo quos.</p> -->
+                    </div>
+                    
+                    <figure class="testimony_picture">
+                        <img src="./images/sql.png" class="testimony_img" alt="">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony_arrow" id="next" alt="">
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge_container container">
+                <div class="knowledge_texts">
+                    <h2 class="subtitle">Mi nombre es Angel Varela, estudiante de la F.N.I.</h2>
+                    <p class="knowledge_paragraph">Soy estudiante de Ingenieria de Sistemas con pasion por el desarrolo de aplicaciones web y el aprendizaj continuo de nuevas tecnologias. Actualmente estoy buscando oportunidades para aplicar mis conocimientos en proyectos reales y seguir creciendo en el campo de la programacion</p>
+                    <!-- <a href="#" class="cta">mini pruebba</a> -->
+                </div>
+
+                <figure class="knowledge_picture">
+                    <img src="./images/mgl.jpg" class="knowledge_img">
+                </figure>
+            </div>
+        </section>
+
+        
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <div class="contenido_seccion">
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="telefono" placeholder="Teléfono">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="text" id="tema" placeholder="Tema">
+                        <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button id="enviar">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Contáctame: +591 72493243
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: angel.dario1200@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="#" id="scrollToBottom" class="scroll-button">⬇️</a>
+    <script src="./js/slide.js"></script>
 </body>
 </html>
